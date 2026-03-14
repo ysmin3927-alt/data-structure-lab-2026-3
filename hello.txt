@@ -17,3 +17,53 @@ Fast-forward
 Merge made by the 'recursive' strategy 
 >>integrate 된다. 
 
+
+git log 해봤는데 log가 합쳐진거 같은데? 시간순으로 ? Author이 다르네 .
+commit a6a1bbfc52cbebe9e6bef79469c6ae98905a3283 (HEAD -> master)
+Merge: d062aa2 dcbec07  //여기 보면 파일을 합쳤다고 나오네.
+Author: Y.S.M <ysmin3927@gmail.com>
+Date:   Sat Mar 14 17:27:41 2026 +0900
+
+    hello파일 - 관련없다고 판단된 refs를 연결 및 충돌 ps추가
+
+commit d062aa2f7b4117b9d298321602e5b9a4a6924e2c
+Author: Y.S.M <ysmin3927@gmail.com>
+Date:   Sat Mar 14 16:55:38 2026 +0900
+
+    today 파일 추가
+
+commit dcbec0797ecf3954816fb5ef8857f4461b48afaf (origin/master, origin/HEAD)**************
+Author: seungminYou <ysmin3927@gmail.com>
+Date:   Thu Mar 12 15:26:13 2026 +0900
+
+     hello.txt
+
+commit a5875ebf3cf38481005a0a2c62f2524273d176e9
+Author: seungminYou <ysmin3927@gmail.com>
+Date:   Thu Mar 12 15:05:57 2026 +0900
+
+    i am seungmin줄추가
+
+commit 98f3c5d28c44fa939b061f13659dac0d559579b7
+Author: Y.S.M <ysmin3927@gmail.com>
+Date:   Wed Mar 11 00:30:52 2026 +0900
+
+    hungry 파일 추가
+
+commit 5bad98ba5ff65b9fa35e3cab65d614918344dc92
+Author: Y.S.M <ysmin3927@gmail.com>
+Date:   Wed Mar 11 00:30:25 2026 +0900
+
+    hello 파일 추가
+
+commit 1b3b181c0d191692626a2ccc06f1162d50ff55f1
+Author: cloudymem <shdbwns111142@gmail.com>
+Date:   Tue Mar 10 16:52:11 2026 +0900
+
+    hello.txt add .
+
+commit 19ff66213a13c24a79b3d605420784547030f2be
+Author: cloudymem <shdbwns111142@gmail.com>
+Date:   Tue Mar 10 16:45:03 2026 +0900
+:
+이거 빠져나오기 q(quit임)
