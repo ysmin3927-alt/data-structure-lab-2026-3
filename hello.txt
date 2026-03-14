@@ -1,1 +1,19 @@
+<<<<<<< HEAD //내가 노트북에서 입력한 hello	'
 hello
+======= //두 버전을 나누는 경계선
+hello
+i am seungmin           
+sora
+>>>>>>> dcbec0797ecf3954816fb5ef8857f4461b48afaf //강의실 컴퓨터의 log 이지만 github에서 받아온것. 
+ 
+
+git pull origin master --allow-unrelated-histories
+> git pull origin master
+
+같은 파일의 같은 줄을 고쳤을때 local이 다르니까 어느것이 맞냐 . 
+
+git pull origin master
+Fast-forward
+Merge made by the 'recursive' strategy 
+>>integrate 된다. 
+
