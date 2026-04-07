@@ -29,8 +29,17 @@
           "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Pet.h",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\dsf\\data-structure-lab-2026-3\\Lec04_Class_Example\\Pet.h",
+              "RelativeDocumentMoniker": "Pet.h",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\dsf\\data-structure-lab-2026-3\\Lec04_Class_Example\\Pet.h",
+              "RelativeToolTip": "Pet.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-04-02T05:40:30.601Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -40,21 +49,11 @@
               "RelativeDocumentMoniker": "Music.h",
               "ToolTip": "C:\\Users\\USER\\Downloads\\dsf\\data-structure-lab-2026-3\\Lec04_Class_Example\\Music.h",
               "RelativeToolTip": "Music.h",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAADEAAABIAAAA",
+              "ViewState": "AQIAADYAAAAAAAAAAAAgwD4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-02T06:17:54.202Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Pet.h",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\dsf\\data-structure-lab-2026-3\\Lec04_Class_Example\\Pet.h",
-              "RelativeDocumentMoniker": "Pet.h",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\dsf\\data-structure-lab-2026-3\\Lec04_Class_Example\\Pet.h",
-              "RelativeToolTip": "Pet.h",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAABQAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-02T05:40:30.601Z"
+              "WhenOpened": "2026-04-02T06:17:54.202Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -64,9 +63,15 @@
               "RelativeDocumentMoniker": "Rectangle.h",
               "ToolTip": "C:\\Users\\USER\\Downloads\\dsf\\data-structure-lab-2026-3\\Lec04_Class_Example\\Rectangle.h",
               "RelativeToolTip": "Rectangle.h",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB8AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-02T05:19:57.015Z"
+              "WhenOpened": "2026-04-02T05:19:57.015Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Document",
@@ -76,7 +81,7 @@
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\USER\\Downloads\\dsf\\data-structure-lab-2026-3\\Lec04_Class_Example\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAYwBUAAAAAAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAgwDUAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-04-02T05:18:48.562Z",
               "EditorCaption": ""

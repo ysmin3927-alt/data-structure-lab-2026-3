@@ -28,6 +28,7 @@ int main() {
 	myService.addMusic("Flower", "Bls", "Jdwmp_Album", 2035);
 	myService.addMusic("Lemon", "Blasdfpink", "kkmp_Album", 2021);
 	myService.addMusic("Candy", "aecackpink", "sump_Album", 2025);
+	myService.addMusic("DDuu", "Blackpink", "Jump_Album", 2028);
 	//Search by title
 	string music_title;//사용자로부터 검색할 음악 제목을 입력받기 위한 변수 선언
 	cout << "\nEnter the Music Title: ";//사용자에게 음악 제목을 입력하라는 메시지를 출력
@@ -40,5 +41,21 @@ int main() {
 	else {
 		cout << "Not Found" << endl;//검색된 음악이 없는 경우 "Not Found" 메시지를 출력
 	}
+	//Search by artist
+	string artist_name;
+	cout << "Enter the artist name: ";
+	cin >> artist_name;
+	vector <Music*> artistResult = myService.searchByArtist(artist_name);
+	if (artistResult.size() > 0) {
+		cout << "Found " << artistResult.size() << " songs  by " << artist_name << " : " << endl;
+		for (int i = 0; i < artistResult.size(); i++) {
+			cout << artistResult[i]->getTitle() << endl;
+
+		}
+	}
+	else {
+		cout << "Not Found" << endl;
+	}
+
 	return 0;
 }
