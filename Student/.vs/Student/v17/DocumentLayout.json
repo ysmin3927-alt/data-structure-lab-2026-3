@@ -18,8 +18,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,14 +32,10 @@
               "RelativeDocumentMoniker": "Student.h",
               "ToolTip": "C:\\Users\\USER\\Downloads\\dsf\\data-structure-lab-2026-3\\Student\\Student.h",
               "RelativeToolTip": "Student.h",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAAeAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAADoAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-04-14T07:52:44.365Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Document",
@@ -45,7 +45,7 @@
               "RelativeDocumentMoniker": "Student.cpp",
               "ToolTip": "C:\\Users\\USER\\Downloads\\dsf\\data-structure-lab-2026-3\\Student\\Student.cpp",
               "RelativeToolTip": "Student.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAATAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-04-14T07:52:38.642Z",
               "EditorCaption": ""

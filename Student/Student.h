@@ -37,12 +37,12 @@ public:
 
     void error(const char* message) {
         printf("%s\n", message);
-        exit(1);
+        exit(1); //프로그램 강제 종료
     }
 
     void push(Student e) {
         if (isFull()) error("스택 포화 에러");
-        data[++top] = e;
+        data[++top] = e;//top 증가
     }
 
     Student pop() { // 반환형을 int가 아닌 Student로!
@@ -52,8 +52,8 @@ public:
 
     void display() {
         printf("[스택 항목의 수 = %2d]\n", top + 1);
-        for (int i = 0; i <= top; i++) {
+        for (int i = top; i >-1; i--) {
             data[i].display(); // 각 학생의 display 호출
         }
     }
-};
+};// "https://github.com/johg15" 여기에 stack 예시 있고 ppt에 그 queue a문제 나온데 
