@@ -30,6 +30,7 @@ bool isValidLoc(int r, int c)
     // 2. 범위를 벗어나지 않았다면, 갈 수 있는 길('0')이거나 출구('x')인지 확인
     return map[r][c] == '0' || map[r][c] == 'x';
 }
+/*
 int main() { // BFS는 FIFO를 사용
     deque<Location2D> locDeque;          // 위치 덱 객체 생성 // STL의 deque 템플릿 파일 포함
     Location2D entry(1, 0);             // 입구 객체
@@ -62,11 +63,11 @@ int main() { // BFS는 FIFO를 사용
     printf("미로 탐색 실패\n");
     return 0;
 }
+*/
 
 
 
 
-/*
 int main() {
     deque<Location2D> locDeque;          // 위치 덱 객체 생성 // STL의 deque 템플릿 파일 포함
     Location2D entry(1, 0);             // 입구 객체
@@ -79,9 +80,10 @@ int main() {
         int r = here.row;
         int c = here.col;
 
+        printf("(%d,%d) ", r, c);
         if (map[r][c] == 'x') {          // 출구에 도달했다면 탐색 성공
             printf("미로 탐색 성공!\n");
-            return;
+            return 0;
         }
         else {                           // 출구가 아니면 현재 위치를
             map[r][c] = '.';             // 현재 위치를 "지나옴" 처리
@@ -93,8 +95,9 @@ int main() {
         }
     }
     printf("미로탐색실패\n");
+    return 0;
 }
-*/
+
 
 //오직 한쪽 끝으로만 데이터가 들어오고 나가는 제한된 스택구조
 //
