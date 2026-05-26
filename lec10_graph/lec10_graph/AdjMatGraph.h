@@ -1,7 +1,9 @@
+
 #pragma once
 #include <stdio.h>
-
+#define INF 9999
 #define MAX_VTXS 20
+
 
 class AdjMatGraph {
 protected:
@@ -108,10 +110,59 @@ public:
             fprintf(fp, "%c ", getVertex(i));
 
             for (int j = 0; j < size; j++) {
-                fprintf(fp, "%3d", getEdge(i, j));
+                fprintf(fp, "%6d", getEdge(i, j));
             }
 
             fprintf(fp, "\n");
         }
     }
 };
+
+
+class WGraph : public AdjMatGraph {
+public:
+  
+    // 1. 간선 삽입 함수
+    void insertEdge(int u, int v, int weight) {
+        if (weight > INF) {
+            weight = INF;
+        }
+        setEdge(u, v, weight);
+    }
+
+    // 2. 간선 존재 여부 확인 함수 (가중치가 INF보다 작으면 간선이 존재함)
+    bool hasEdge(int i, int j) {
+        return (getEdge(i, j) < INF);
+    }
+
+    // 3. 파일에서 그래프 정보를 읽어오는 함수 (인접 행렬 기반 가중치 그래프)
+  
+    void load(const char* filename) {
+        FILE* fp;
+        fopen_s(&fp, filename, "r");
+        if (fp != NULL) {
+            int n;
+            // 정점의 전체 개수 읽기
+            fscanf_s(fp, "%d", &n);
+
+            for (int i = 0; i < n; i++) {
+                char str[80];
+                int val;
+
+                // 정점의 이름 읽기 및 삽입
+                fscanf_s(fp, "%s", str,(unsigned int)sizeof(str));
+                insertVertex(str[0]);
+
+                // 해당 정점과 연결된 간선 정보(가중치 행렬) 읽기 및 삽입
+                for (int j = 0; j < n; j++) {
+                    fscanf_s(fp, "%d", &val);
+                    insertEdge(i, j, val);
+                }
+            }
+            fclose(fp);
+        }
+    }
+    
+};
+
+

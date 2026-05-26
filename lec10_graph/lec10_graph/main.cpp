@@ -1,7 +1,9 @@
 #include "AdjMatGraph.h"
+#include <stdio.h>
 
 int main() {
     AdjMatGraph g;
+    
 
     // 정점 삽입
     for (int i = 0; i < 7; i++) {
@@ -33,6 +35,19 @@ int main() {
         printf("파일 열기 실패\n");
     }
 
+    // 가중치 그래프
+    WGraph wg;
+
+    wg.load("../graph.txt");
+
+    printf("\n가중치 그래프\n");
+    wg.display();
+
+
+   
     return 0;
+
+
+ 
 }
 

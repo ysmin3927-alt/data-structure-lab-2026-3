@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\Downloads\\dsf\\data-structure-lab-2026-3\\lec10_graph\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{068FB680-403E-4395-ABD2-B635E8E10254}|Maze\\Maze.vcxproj|C:\\Users\\USER\\Downloads\\dsf\\data-structure-lab-2026-3\\lec10_graph\\Maze\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{068FB680-403E-4395-ABD2-B635E8E10254}|Maze\\Maze.vcxproj|solutionrelative:Maze\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{57ABB421-4322-4458-B40E-A51FD56D965E}|lec10_graph\\lec10_graph.vcxproj|C:\\Users\\USER\\Downloads\\dsf\\data-structure-lab-2026-3\\lec10_graph\\lec10_graph\\AdjMatGraph.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{57ABB421-4322-4458-B40E-A51FD56D965E}|lec10_graph\\lec10_graph.vcxproj|solutionrelative:lec10_graph\\AdjMatGraph.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{068FB680-403E-4395-ABD2-B635E8E10254}|Maze\\Maze.vcxproj|C:\\Users\\USER\\Downloads\\dsf\\data-structure-lab-2026-3\\lec10_graph\\Maze\\Location2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{068FB680-403E-4395-ABD2-B635E8E10254}|Maze\\Maze.vcxproj|solutionrelative:Maze\\Location2D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{57ABB421-4322-4458-B40E-A51FD56D965E}|lec10_graph\\lec10_graph.vcxproj|C:\\Users\\USER\\Downloads\\dsf\\data-structure-lab-2026-3\\lec10_graph\\lec10_graph\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{57ABB421-4322-4458-B40E-A51FD56D965E}|lec10_graph\\lec10_graph.vcxproj|solutionrelative:lec10_graph\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\dsf\\data-structure-lab-2026-3\\lec10_graph\\lec10_graph\\main.cpp",
+              "RelativeDocumentMoniker": "lec10_graph\\main.cpp",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\dsf\\data-structure-lab-2026-3\\lec10_graph\\lec10_graph\\main.cpp",
+              "RelativeToolTip": "lec10_graph\\main.cpp",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAywBgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-05-26T07:21:09.783Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -27,27 +40,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\dsf\\data-structure-lab-2026-3\\lec10_graph\\Maze\\main.cpp",
-              "RelativeDocumentMoniker": "Maze\\main.cpp",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\dsf\\data-structure-lab-2026-3\\lec10_graph\\Maze\\main.cpp",
-              "RelativeToolTip": "Maze\\main.cpp",
-              "ViewState": "AQIAAD4AAAAAAAAAAAAcwFQAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-05-19T07:36:37.048Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Location2D.h",
-              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\dsf\\data-structure-lab-2026-3\\lec10_graph\\Maze\\Location2D.h",
-              "RelativeDocumentMoniker": "Maze\\Location2D.h",
-              "ToolTip": "C:\\Users\\USER\\Downloads\\dsf\\data-structure-lab-2026-3\\lec10_graph\\Maze\\Location2D.h",
-              "RelativeToolTip": "Maze\\Location2D.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAACAAAA",
+              "Title": "AdjMatGraph.h",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\dsf\\data-structure-lab-2026-3\\lec10_graph\\lec10_graph\\AdjMatGraph.h",
+              "RelativeDocumentMoniker": "lec10_graph\\AdjMatGraph.h",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\dsf\\data-structure-lab-2026-3\\lec10_graph\\lec10_graph\\AdjMatGraph.h",
+              "RelativeToolTip": "lec10_graph\\AdjMatGraph.h",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAAAIEAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-05-19T07:36:53.682Z"
+              "WhenOpened": "2026-05-26T07:16:50.142Z",
+              "EditorCaption": ""
             }
           ]
         }
