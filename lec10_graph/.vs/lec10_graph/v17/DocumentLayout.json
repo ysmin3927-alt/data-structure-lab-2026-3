@@ -21,6 +21,10 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "main.cpp",
@@ -28,14 +32,9 @@
               "RelativeDocumentMoniker": "lec10_graph\\main.cpp",
               "ToolTip": "C:\\Users\\USER\\Downloads\\dsf\\data-structure-lab-2026-3\\lec10_graph\\lec10_graph\\main.cpp",
               "RelativeToolTip": "lec10_graph\\main.cpp",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAywBgAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACAAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-05-26T07:21:09.783Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "WhenOpened": "2026-05-26T07:21:09.783Z"
             },
             {
               "$type": "Document",
@@ -45,7 +44,7 @@
               "RelativeDocumentMoniker": "lec10_graph\\AdjMatGraph.h",
               "ToolTip": "C:\\Users\\USER\\Downloads\\dsf\\data-structure-lab-2026-3\\lec10_graph\\lec10_graph\\AdjMatGraph.h",
               "RelativeToolTip": "lec10_graph\\AdjMatGraph.h",
-              "ViewState": "AQIAAHsAAAAAAAAAAAAAAIEAAAAVAAAA",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAiwIsAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-05-26T07:16:50.142Z",
               "EditorCaption": ""

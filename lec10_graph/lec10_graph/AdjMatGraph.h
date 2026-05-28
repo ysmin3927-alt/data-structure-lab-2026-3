@@ -159,8 +159,9 @@ public:
                     insertEdge(i, j, val);
                 }
             }
-            fclose(fp);
         }
+        fclose(fp);
+
     }
     
 };
