@@ -346,4 +346,52 @@ public:
 
         cout << "MST 총 비용 : " << totalCost << endl;
     }
+    // MST에 포함되지 않은 정점들 중에서 MST와의 거리(dist)가 최소인 정점 선택
+    int getMinVertex(bool* selected, int* dist) {
+        int minv = 0;
+        int mindist = INF;
+        for (int v = 0; v < size; v++) {
+            if (!selected[v] && dist[v] < mindist) {
+                mindist = dist[v];
+                minv = v;
+            }
+        }
+        return minv;
+    }
+
+    // Prim의 MST 구현 함수
+    void Prim(int s) {
+        bool selected[MAX_VTXS];    // 정점이 이미 포함되었는가?
+        int dist[MAX_VTXS];         // 거리
+
+        for (int i = 0; i < size; i++) { // 배열 초기화
+            dist[i] = INF;
+            selected[i] = false;
+        }
+
+        dist[s] = 0;                // 시작 정점
+        int totalCost = 0;          // MST 총 비용을 계산하기 위한 변수 추가
+
+        for (int i = 0; i < size; i++) {
+            int u = getMinVertex(selected, dist);
+            selected[u] = true;
+
+            if (dist[u] == INF) return;
+
+            printf("%c ", getVertex(u));
+            totalCost += dist[u];   // 선택된 정점의 최소 비용 누적
+
+            for (int v = 0; v < size; v++) {
+                if (getEdge(u, v) != INF) {
+                    if (!selected[v] && getEdge(u, v) < dist[v]) {
+                        dist[v] = getEdge(u, v);
+                    }
+                }
+            }
+        }
+        printf("\n");
+        cout << "Prim MST 총 비용 : " << totalCost << endl;
+    }
+
+
 };
