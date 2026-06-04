@@ -1,5 +1,4 @@
 #pragma once
-#pragma once
 
 #include <iostream>
 #include <fstream>
@@ -392,6 +391,69 @@ public:
         printf("\n");
         cout << "Prim MST 총 비용 : " << totalCost << endl;
     }
+}; // ⭕ WGraphMST 클래스를 안전하게 닫아 차단 완료!
 
+// ===============================
+// Dijkstra 알고리즘의 최단 경로 탐색 기능이 추가된 그래프
+// WGraph를 온전히 상속받도록 분리된 독립 클래스
+// ===============================
+class WGraphDijkstra : public WGraph {
+    int dist[MAX_VTXS];     // 시작노드로부터의 최단경로 거리
+    bool found[MAX_VTXS];   // 방문한 정점 표시
 
+public:
+    // 아직 방문하지 않은 정점 중 dist 값이 최소인 정점을 선택하는 함수
+    int chooseVertex() {
+        int min = INF;
+        int minpos = -1;
+        for (int i = 0; i < size; i++) {
+            if (dist[i] < min && !found[i]) {
+                min = dist[i];
+                minpos = i;
+            }
+        }
+        return minpos;
+    }
+
+    // dist 상태를 출력하는 함수
+    void printDistance() {
+        for (int i = 0; i < size; i++) {
+            if (dist[i] >= INF)
+                printf("%5s", "INF");
+            else
+                printf("%5d", dist[i]);
+        }
+        printf("\n");
+    }
+
+    // Dijkstra의 최단 경로 알고리즘: start 정점에서 시작함.
+    void ShortestPath(int start) {
+        // 초기화: 시작 정점에서 다른 정점까지의 직행 거리 설정
+        for (int i = 0; i < size; i++) {
+            dist[i] = getEdge(start, i);
+            found[i] = false;
+        }
+
+        found[start] = true;    // 시작노드 방문 표시
+        dist[start] = 0;        // 최초 거리 0 설정
+
+        // 모든 정점을 방문할 때까지 루프 반복
+        for (int i = 0; i < size; i++) {
+            printf("Step%2d:", i + 1);
+            printDistance();
+
+            int u = chooseVertex(); // 가장 가까운 미방문 정점 선택
+            if (u == -1) break;     // 연결이 끊겨 더 이상 갈 수 없으면 탈출
+            found[u] = true;
+
+            // 선택된 정점 u를 거쳐서 정점 w로 가는 비용이 더 작다면 dist 갱신 (완화, Relaxation)
+            for (int w = 0; w < size; w++) {
+                if (found[w] == false) {
+                    if (dist[u] + getEdge(u, w) < dist[w]) {
+                        dist[w] = dist[u] + getEdge(u, w);
+                    }
+                }
+            }
+        }
+    }
 };
